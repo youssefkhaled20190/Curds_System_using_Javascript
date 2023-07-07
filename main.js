@@ -48,6 +48,13 @@ create.onclick = function (){
         Category : category.value.toLowerCase() ,
     }
 
+// validate data 
+
+if(tittle.value != ''
+ &&price.value != '' 
+ &&_newproduct.Count < 100
+ &&category.value != ''
+) {
     if (mood === 'create'){
         if(_newproduct.Count > 1){
             for(let i=0 ; i< _newproduct.Count ; i++){
@@ -63,9 +70,11 @@ create.onclick = function (){
         count.style.display="block";
         
     }
+    ClearInputs()
+}
     
 localStorage.setItem('product' , JSON.stringify(products));
-ClearInputs()
+
 ShowData()
 }
 
