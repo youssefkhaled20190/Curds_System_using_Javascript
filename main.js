@@ -21,10 +21,10 @@ function GetTotal(){
     if (price.value != ''){
         let result = (+price.value + +ads.value + +taxes.value)- +discount.value;
         total.innerHTML = result;
-        total.style.background =" #ec38bc";
+        total.style.background = "#302b63";
     }else{
         total.innerHTML ='';
-        total.style.background =" #f1b9e1";
+        total.style.background =" #6f0000";
     }
 }
 
@@ -100,7 +100,7 @@ function ShowData(){
     for(let i =0 ; i<products.length;i++){
          table +=`
         <tr>
-        <td>${i}</td>
+        <td>${i+1}</td>
         <td>${products[i].Tittle}</td>
         <td>${products[i].Price}</td>
         <td>${products[i].Ads}</td>

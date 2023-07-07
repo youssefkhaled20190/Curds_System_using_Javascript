@@ -13,21 +13,21 @@
     <p>system managment</p>
 </div>
 <div class="inputs">
-    <input placeholder="tittle" id="tittle" type="text"> 
+    <input placeholder="Title" id="tittle" type="text"> 
     <div class="price">
         <input onkeyup="GetTotal()" type="number" id="price" placeholder="price">
-        <input onkeyup="GetTotal()" type="number" id="taxes" placeholder="taxes">
+        <input onkeyup="GetTotal()" type="number" id="taxes" placeholder="Taxes">
         <input onkeyup="GetTotal()" type="number" id="ads" placeholder="ads">
-        <input onkeyup="GetTotal()" type="number" id="discount" placeholder="discount">
+        <input onkeyup="GetTotal()" type="number" id="discount" placeholder="Discount">
         <small id="total"></small>
     </div>
     <input placeholder="count" id="count" type="number">
-    <input placeholder="category" id="category" type="text">
+    <input placeholder="Category" id="category" type="text">
     <button id="submit">Create</button>
 </div>
 <div class="outputs">
     <div class="SearchBox">
-        <input type="text" placeholder="search" id="search" onkeyup="SearchData(this.value)">
+        <input type="text" placeholder="Search" id="search" onkeyup="SearchData(this.value)">
         <div class="type_s">
             <button onclick="SearchMod(this.id)" id="SearchCategory" class="S_category">Search by category</button>
             <button onclick="SearchMod(this.id)" id="SearchTittle" class="S_tittle">search by tittle</button>
